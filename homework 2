@@ -1,0 +1,59 @@
+# 1.  Write a program that generates and prints 50 random integers, each between 3 and 6.
+
+import random
+from random import randint
+for i in range(50):
+       print(random.randint(3, 6), end = " ")
+       
+# 2.  Write a program that asks the user to enter two numbers, x and y , and computes | x − y | / x + y
+
+print("Value of |x - y| / x + y. ")
+x = int(input("Please enter x: "))
+y = int(input("Please enter y: "))
+z = (abs(x - y)) / x + y
+print(f"The value of the (|{x} - {y}| / {x} + {y} is {z}.")
+
+
+#3. my_string = "assadsdfdsf'
+new_string = my_string[::-1]
+
+if my_string == new_string:
+    print(f"{my_string} is polidrom.")
+else:
+    print(f"{my_string} is not polidrom.")
+    
+    
+ # 4. Write a program that takes a list of numbers and calculates the sum of its elements.
+ 
+ input_string = input('Enter elements of a list separated by space ')
+user_list = input_string.split()
+print('list: ', user_list)
+for i in range(len(user_list)):
+    user_list[i] = int(user_list[i])
+print("Sum = ", sum(user_list))
+
+# 5. Write a program that takes a list of numbers and returns the largest number in the list.
+
+
+input_string = input('Enter elements of a list separated by space ')
+user_list = input_string.split()
+print('list: ', user_list)
+for i in range(len(user_list)):
+    user_list[i] = int(user_list[i])
+print("Largest number is ", max(user_list))
+
+
+#6. Write a program that reverses a string
+
+input_string = input('Enter elements of a list separated by space ')
+user_list = input_string.split()[::-1]
+print('list: ', user_list)
+
+
+#7. Write a program that calculates the area of a circle given its radius. 
+
+import math
+from math import pi
+r = int(input("Enter the radius of cicle: "))
+area_of_cycle = round(pi * r **2, 5)
+print(f"The is {area_of_cycle}. ")
